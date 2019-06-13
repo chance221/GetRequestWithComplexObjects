@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="even-space">
+    <h1>Park Search</h1>
+    </div>
+
+    <form name="park-search" id="parkSearch">
+        <div class="even-space">
+        <label for="stateInput"><h4>Enter the state you would like to search using the two letter abreviation.</h4></label>
+        </div>
+        <div class="state-selector even-space">
+            <input type="text" name="stateInput" class="state-input" id="clear-box" placeholder="example: MI" maxlength="2"><br><br>
+        </div>
+
+        <div class="even-space"><span class="search-states even-space hidden"></span></div>
+        
+        <div class="even-space">
+            <input type="button" name="anotherState" value="Add another state" id="addState">
+        </div>
+        <div class="even-space">
+        <label for="maxResults"><h4>Enter the maximum search results.</h4></label>
+        </div>
+        <div class="even-space">
+        <input type="number" name="maxResults" id="max-input" min="0" placeholder="10" value="10"><br><br>
+        </div>
+        <div class="even-space">
+        <input type="submit" name="submit" value="Search">
+        </div>
+    
+    </form>
+
+    <p id="js-error-message" class="error-message"></p>
+    
+    <section id="search-results" class="hidden" >
+        
+        <h2>Results</h2>
+        
+        <ul id="results-list">
+        
+        </ul>
+
+
+    </section>
+</div>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
